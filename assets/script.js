@@ -16,8 +16,14 @@ document.querySelector("#close").addEventListener("click", function(){
 });
 
 
+function batmobil() {
+    document.getElementById("model").setAttribute("src", "./assets/glb-files/batmobil.glb")
+}
 function busterDrone() {
     document.getElementById("model").setAttribute("src", "./assets/glb-files/buster_drone.glb")
+}
+function conceptCar() {
+    document.getElementById("model").setAttribute("src", "./assets/glb-files/concept_car.glb")
 }
 function cyberpunk() {
     document.getElementById("model").setAttribute("src", "./assets/glb-files/cyberpunk.glb")
