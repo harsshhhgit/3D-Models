@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Model-Viewer</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Disclaimer</h2>
+        <p>
+            This website's 3D models were all downloaded from <a href="https://sketchfab.com/">Sketchfab</a>. The
+            model's creator owns every one of the models used on this website.
+        </p>
+    </div>
+    <div class="container">
+        <model-viewer class="model" id="model" src="./assets/glb-files/fpv.glb" ar
+            ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="2" exposure="0.83"
+            shadow-softness="1" autoplay auto-rotate></model-viewer>
+    </div>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#" onclick="dodgeBike()">Tomahawk Bike</a></li>
+                <li><a href="#" onclick="conceptBike()">Concept Bike</a></li>
+                <li><a href="#" onclick="fighterPlane()">Next-Gen Plane</a></li>
+                <li><a href="#" onclick="fpvDrone()">FPV Drone</a></li>
+                <li><a href="#" onclick="helicopter()">Helicopter</a></li>
+                <li><a href="#" onclick="powerWeapon()">AX-20 Power Gun</a></li>
+                <li><a href="#" onclick="lamboAventador()">Lamborghini Aventador</a></li>
+                <li><a href="#" onclick="lamboGallardo()">Lamborghini Gallardo</a></li>
+                <li><a href="#" onclick="buggy()">Buggy</a></li>
+                <li><a href="#" onclick="planet()">Planet</a></li>
+                <li><a href="#" onclick="pattern()">Pattern</a></li>
+                <li><a href="#" onclick="scifiVehicle1()">Sci-Fi Vehicle</a></li>
+                <li><a href="#" onclick="scifiVehicle2()">Sci-Fi Vehicle 2</a></li>
+                <li><a href="#" onclick="weaponDrone()">Attack Drone</a></li>
+                <li><a href="#" onclick="weaponDrone2()">Nex-Gen Drone</a></li>
+                <li><a href="#" onclick="hoverBike()">Hover Bike</a></li>
+                <li><a href="#" onclick="cyberpunk()">Cyberpunk</a></li>
+                <li><a href="#" onclick="vikingRoom()">Viking Room</a></li>
+                <li><a href="#" onclick="porsche()">Porsche 911 Turbo</a></li>
+                <li><a href="#" onclick="phoenix()">Phoenix</a></li>
+                <li><a href="#" onclick="traditionalAK()">AK-47</a></li>
+                <li><a href="#" onclick="house()">Painted House</a></li>
+                <li><a href="#" onclick="busterDrone()">Next-Gen Drone</a></li>
+                <li><a href="#" onclick="mercHover()">Merc Hover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
